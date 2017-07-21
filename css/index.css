@@ -1,0 +1,91 @@
+@font-face {
+    font-family: crackfont;
+    src: url("../font/crackman.ttf");
+}
+*{
+padding:0;
+margin:0;
+font-family: crackfont;
+background-size:cover;
+color:#eee;
+}
+#start,#gameover{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:url("../img/bg.png");
+    z-index:1;
+}
+body{
+    background-color:#9be7f1;
+    background-image:url("../img/bg.png");
+}
+header{
+    background:url("../img/bgwall.png");
+    color:#fff;
+    text-shadow: 3px 3px 3px #000;
+    padding: 4px;
+    font-size: 26px;
+}
+button{
+     background-image: linear-gradient(to bottom, #ff8c00, #f0ac00);
+     border:none;
+     font-size:35px;
+     border-radius:5px;
+     padding:6px;
+     width:70%;
+     margin:5px;
+}
+td{
+    width:25px;
+    height:25px;
+    background-color:#c7e5ff;
+}
+tr,td{
+    padding:0;
+    margin:0;
+}
+table{
+    border:none;
+    margin:0;
+    padding:0;
+    white-space: none;
+    border-collapse: collapse;
+}
+#table{
+        border:solid 2px #444;
+}
+#table td{
+    border:0.3px solid #eee;
+}
+.snake{
+    background: #456;
+}
+.food{
+    background:#c7e5ff;
+    background-image: url("../img/apple.svg");
+    bacground-size: cover;
+}
+#control{
+    position: fixed;
+    bottom: 10px;
+    left:50%;
+    transform: translateX(-50%);
+}
+#control td{
+    width:70px;
+    height:70px;
+    background-size:cover;
+}
+.btn{
+    background-color:#2196F3;
+    border-radius:0 8px 8px 0;
+}
+.btn:hover{
+    background-color:#77aaF3;
+}
+.white{
+    opacity: 0;
+}

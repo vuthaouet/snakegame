@@ -1,0 +1,59 @@
+<html>
+<link rel="stylesheet" href="css/index.css"/>
+<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<body>
+    <div id="start">
+    <center>
+        <br>
+    <span style="font-size:78px;text-shadow:0 0 15px #ffec04;">    SNAKE </span>
+    <br><br><br><br><br>
+    <button onclick="play(600)">EASY</button>
+    <button onclick="play(400)">MEDIUM</button>
+    <button onclick="play(200)">HARD</button>
+    <span style="font-family:arial;position:absolute;bottom:10px;transform:translateX(-50%);left:50%">Tran Manh Cuong - 2017</span>
+    </center>
+
+    </div>
+<div style="display:none;" id="gameover">
+   <br><center>
+    <span style="font-size:65px;text-shadow:0 0 15px #ff2233;">   GAMEOVER </span>
+<span style="font-size:45px;" id="score">SCORE: 0</span>
+<br><br><br><br><br><br>
+      <button onclick="location.reload()">REPLAY</button>
+    <center>
+</div>
+
+    <header>
+SCORE:0
+        </header>
+<div style="background:#456;padding-bottom:3px">
+   <center> <table border="0" id="table">
+        </table> </center>
+<div>
+<center>
+<table id="control">
+<tr>    
+    <td class="white"></td>
+    <td onclick="up()" class="btn" style="background-image:url('img/arrow.png');transform:rotate(-90deg);"></td>
+    <td class="white"></td>
+</tr>
+<tr>
+    <td onclick="left()" class="btn" style="background-image:url('img/arrow.png');transform:rotate(180deg);"></td>
+    <td onclick="direction='none'"><center>PAUSE</td>
+    <td onclick="right()" class="btn" style="background-image:url('img/arrow.png')"></td>
+<tr>
+    <td class="white"></td>
+    <td onclick="down()" class="btn" style="background-image:url('img/arrow.png');transform:rotate(90deg);"></td>
+    <td class="white"></td>
+<tr>
+
+</tr>
+</table>  
+</center>          
+<audio autoplay id="mp3" src="mp3/music.ogg"></audio>
+<script src="js/index.js"></script>
+</body>
+</html>
